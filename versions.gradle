@@ -20,4 +20,6 @@ ext {
     novoda_bintray_version = "0.9.2"
     library_version = "3.1.6"
     library_version_code = 77
+
+
 }
