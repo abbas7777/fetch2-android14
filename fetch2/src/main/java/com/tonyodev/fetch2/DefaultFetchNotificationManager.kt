@@ -14,6 +14,7 @@ import com.tonyodev.fetch2.DownloadNotification.ActionType.*
 import com.tonyodev.fetch2.util.DEFAULT_NOTIFICATION_TIMEOUT_AFTER
 import com.tonyodev.fetch2.util.DEFAULT_NOTIFICATION_TIMEOUT_AFTER_RESET
 import com.tonyodev.fetch2.util.onDownloadNotificationActionTriggered
+import com.tonyodev.fetchmigrator.R
 
 /**
  * The default notification manager class for Fetch. This manager supports both single
