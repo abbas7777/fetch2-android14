@@ -53,6 +53,11 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
     }
 
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
         androidTest.java.srcDirs += 'src/androidTest/kotlin'
