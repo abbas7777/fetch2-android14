@@ -87,7 +87,7 @@ afterEvaluate {
 
             groupId 'com.github.abbas7777'
             artifactId 'fetch2-android14'
-            version '3.2.0-alpha07'
+            version library_version
         }
     }
 }

@@ -18,6 +18,6 @@ ext {
     rxAndroid2_version = "2.1.1"
     kotlin_serialization = "1.9.22"
     timber_version = "4.7.1"
-    library_version = "3.2.0-alpha06"
-    library_version_code = 77
+    library_version = "3.2.0-alpha08"
+    library_version_code = 86
 }
