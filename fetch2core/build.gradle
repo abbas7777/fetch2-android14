@@ -73,3 +73,15 @@ dependencies {
 tasks.withType(Javadoc).configureEach {
     enabled = false
 }
+
+afterEvaluate {
+    android.libraryVariants.each { variant ->
+        publishing.publications.create(variant.name, MavenPublication) {
+            from components.findByName(variant.name)
+
+            groupId 'com.github.abbas7777'
+            artifactId 'fetch2-android14'
+            version '3.2.0-alpha07'
+        }
+    }
+}
