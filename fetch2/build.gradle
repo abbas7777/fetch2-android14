@@ -61,7 +61,7 @@ android {
 }
 
 dependencies {
-
+    api 'androidx.core:core-ktx:1.10.1'
     api "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     kapt "androidx.room:room-compiler:$room_version"
     api "androidx.room:room-runtime:$room_version"
