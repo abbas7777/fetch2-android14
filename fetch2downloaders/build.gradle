@@ -26,6 +26,7 @@ android {
         targetSdkVersion library_target_version
         versionCode library_version_code
         versionName library_version
+        multiDexEnabled true
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
