@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.tonyodev.fetch2.Download;
 import com.tonyodev.fetch2.Status;
+import com.tonyodev.fetchmigrator.R;
 
 import java.io.File;
 import java.util.ArrayList;

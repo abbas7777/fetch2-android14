@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.tonyodev.fetch2.Download;
 import com.tonyodev.fetch2core.FetchObserver;
 import com.tonyodev.fetch2core.Reason;
+import com.tonyodev.fetchmigrator.R;
 
 import org.jetbrains.annotations.NotNull;
 

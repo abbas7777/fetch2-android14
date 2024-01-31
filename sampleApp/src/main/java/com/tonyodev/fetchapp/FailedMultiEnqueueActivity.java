@@ -9,6 +9,7 @@ import android.view.View;
 import com.tonyodev.fetch2.Fetch;
 import com.tonyodev.fetch2.FetchConfiguration;
 import com.tonyodev.fetch2.Request;
+import com.tonyodev.fetchmigrator.R;
 
 import java.util.ArrayList;
 import java.util.List;

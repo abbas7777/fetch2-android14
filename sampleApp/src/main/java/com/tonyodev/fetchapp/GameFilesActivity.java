@@ -23,6 +23,7 @@ import com.tonyodev.fetch2.FetchErrorUtils;
 import com.tonyodev.fetch2.FetchListener;
 import com.tonyodev.fetch2.Request;
 import com.tonyodev.fetch2rx.RxFetch;
+import com.tonyodev.fetchmigrator.R;
 
 import org.jetbrains.annotations.NotNull;
 

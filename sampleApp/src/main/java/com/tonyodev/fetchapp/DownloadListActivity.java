@@ -23,6 +23,7 @@ import com.tonyodev.fetch2.NetworkType;
 import com.tonyodev.fetch2.Request;
 import com.tonyodev.fetch2.FetchConfiguration;
 import com.tonyodev.fetch2okhttp.OkHttpDownloader;
+import com.tonyodev.fetchmigrator.R;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

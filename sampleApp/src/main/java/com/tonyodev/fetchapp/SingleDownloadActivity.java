@@ -21,6 +21,7 @@ import com.tonyodev.fetch2core.FetchObserver;
 import com.tonyodev.fetch2core.Func;
 import com.tonyodev.fetch2core.MutableExtras;
 import com.tonyodev.fetch2core.Reason;
+import com.tonyodev.fetchmigrator.R;
 
 import org.jetbrains.annotations.NotNull;
 

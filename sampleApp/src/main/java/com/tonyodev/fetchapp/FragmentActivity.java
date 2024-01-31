@@ -17,6 +17,7 @@ import com.tonyodev.fetch2.Download;
 import com.tonyodev.fetch2.Fetch;
 import com.tonyodev.fetch2.FetchListener;
 import com.tonyodev.fetch2.Request;
+import com.tonyodev.fetchmigrator.R;
 
 import org.jetbrains.annotations.NotNull;
 

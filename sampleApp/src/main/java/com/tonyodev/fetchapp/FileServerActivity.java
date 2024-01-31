@@ -25,6 +25,7 @@ import com.tonyodev.fetch2core.MutableExtras;
 import com.tonyodev.fetch2fileserver.FetchFileServer;
 import com.tonyodev.fetch2.FetchFileServerDownloader;
 import com.tonyodev.fetch2core.FetchFileServerUriBuilder;
+import com.tonyodev.fetchmigrator.R;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -6,6 +6,8 @@ import android.net.Uri;
 import androidx.annotation.NonNull;
 import android.webkit.MimeTypeMap;
 
+import com.tonyodev.fetchmigrator.R;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;

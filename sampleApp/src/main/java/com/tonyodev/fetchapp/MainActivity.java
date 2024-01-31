@@ -17,6 +17,7 @@ import com.tonyodev.fetch2.Fetch;
 import com.tonyodev.fetch2.FetchConfiguration;
 import com.tonyodev.fetch2fileserver.FetchFileServer;
 import com.tonyodev.fetch2rx.RxFetch;
+import com.tonyodev.fetchmigrator.R;
 
 import java.io.File;
 
