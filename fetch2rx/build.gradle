@@ -2,18 +2,17 @@ apply plugin: 'com.android.library'
 
 apply plugin: 'kotlin-android'
 
-apply plugin: 'com.novoda.bintray-release'
-
+apply plugin: 'maven-publish'
 buildscript {
     apply from: '../versions.gradle'
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$gradle_tools_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "com.novoda:bintray-release:$novoda_bintray_version"
+        
     }
 }
 
@@ -23,8 +22,6 @@ android {
     defaultConfig {
         minSdkVersion library_min_version
         targetSdkVersion library_target_version
-        versionCode library_version_code
-        versionName library_version
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -37,18 +34,20 @@ android {
         }
     }
 
-    lintOptions {
-        abortOnError false
-    }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
         androidTest.java.srcDirs += 'src/androidTest/kotlin'
+    }
+
+    namespace 'com.tonyodev.fetchmigrator'
+    lint {
+        abortOnError false
     }
 }
 
@@ -65,15 +64,8 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
 }
 
-publish {
-    userOrg = 'tonyofrancis'
-    groupId = 'androidx.tonyodev.fetch2rx'
-    artifactId = 'xfetch2rx'
-    publishVersion = library_version
-    desc = 'RxJava extensions for Fetch2'
-    website = 'https://github.com/tonyofrancis/fetch'
-}
 
-tasks.withType(Javadoc).all {
+
+tasks.withType(Javadoc).configureEach {
     enabled = false
 }

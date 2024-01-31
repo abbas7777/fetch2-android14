@@ -2,18 +2,18 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 
-apply plugin: 'kotlin-android-extensions'
+apply plugin: 'maven-publish'
 
 buildscript {
     apply from: '../versions.gradle'
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$gradle_tools_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "com.novoda:bintray-release:$novoda_bintray_version"
+
     }
 }
 
@@ -40,9 +40,11 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
+
+    namespace 'com.tonyodev.fetchmigrator'
 }
 
 dependencies {
@@ -56,6 +58,7 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid2_version"
     implementation "io.reactivex.rxjava2:rxjava:$rxJava2_version"
     implementation "com.jakewharton.timber:timber:$timber_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2"
 
     implementation project(':fetch2okhttp')
     implementation project(':fetch2rx')
