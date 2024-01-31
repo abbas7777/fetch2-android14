@@ -82,7 +82,7 @@ afterEvaluate {
             from components.findByName(variant.name)
 
             groupId 'com.github.abbas7777'
-            artifactId 'fetch2-android14'
+            artifactId 'fetch2migrator'
             version library_version
         }
     }
