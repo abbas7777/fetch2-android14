@@ -188,7 +188,7 @@ open class OkHttpDownloader @JvmOverloads constructor(
     }
 
     override fun getRequestBufferSize(request: Downloader.ServerRequest): Int {
-        return DEFAULT_BUFFER_SIZE
+        return 64 * 1024
     }
 
     override fun getRequestContentLength(request: Downloader.ServerRequest): Long {
